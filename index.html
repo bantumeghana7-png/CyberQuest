@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CyberQuest — Digital Security Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="ambient-background">
+
+    <div class="orb orb-purple"></div>
+    <div class="orb orb-cyan"></div>
+    <div class="orb orb-pink"></div>
+
+    <div class="grid-lines"></div>
+
+    <div class="particles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav>
+
+    <div class="logo">
+
+        <span>◈</span>
+
+        CYBERQUEST
+
+    </div>
+
+
+    <div class="nav-right">
+
+        <span id="nav-xp">
+            XP 000
+        </span>
+
+        <span id="nav-level">
+            LVL 01
+        </span>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section id="home" class="page hero">
+
+
+    <div class="hero-content">
+
+
+        <div class="status">
+
+            <span class="online-dot"></span>
+
+            SYSTEM ONLINE
+
+        </div>
+
+
+        <h1>
+
+            ENTER THE
+
+            <span>
+                DIGITAL MAZE.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Cybersecurity isn't just about knowing the rules.
+
+            It's about recognizing threats before
+            they become problems.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <button onclick="openDashboard()">
+
+                ENTER CYBERQUEST →
+
+            </button>
+
+
+            <button
+                class="secondary-button"
+                onclick="openAbout()"
+            >
+
+                HOW IT WORKS
+
+            </button>
+
+        </div>
+
+
+        <div class="mini-stats">
+
+            <div>
+
+                <strong>
+                    03
+                </strong>
+
+                <span>
+                    MISSIONS
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    1500
+                </strong>
+
+                <span>
+                    MAX XP
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    ∞
+                </strong>
+
+                <span>
+                    REPLAY
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- TERMINAL -->
+
+    <div class="hero-terminal">
+
+
+        <div class="terminal-top">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <small>
+                CYBERQUEST://SYSTEM
+            </small>
+
+        </div>
+
+
+        <div class="terminal-content">
+
+            <p>
+                > booting security protocol...
+            </p>
+
+            <p>
+                > scanning threat database...
+            </p>
+
+            <p>
+                > initializing missions...
+            </p>
+
+            <p>
+                > checking player status...
+            </p>
+
+            <p class="success">
+                > SYSTEM READY ✓
+            </p>
+
+
+            <br>
+
+
+            <div class="terminal-profile">
+
+                <span>
+                    PLAYER
+                </span>
+
+                <strong>
+                    CYBER EXPLORER
+                </strong>
+
+            </div>
+
+
+            <div class="terminal-line">
+
+                <span>
+                    SECURITY
+                </span>
+
+                <span>
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="terminal-bar">
+
+                <div></div>
+
+            </div>
+
+
+            <div class="terminal-line">
+
+                <span>
+                    THREATS FOUND
+                </span>
+
+                <span>
+                    00
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    id="about"
+    class="page about hidden"
+>
+
+
+    <button
+        class="back"
+        onclick="openHome()"
+    >
+
+        ← HOME
+
+    </button>
+
+
+    <div class="about-content">
+
+
+        <span class="eyebrow">
+            WHY CYBERQUEST?
+        </span>
+
+
+        <h2>
+            Learn security by
+            <span>doing.</span>
+        </h2>
+
+
+        <p>
+
+            CyberQuest transforms basic cybersecurity
+            awareness into short interactive challenges.
+
+            Instead of reading endless explanations,
+            you make decisions, receive feedback,
+            earn XP and improve your security instincts.
+
+        </p>
+
+
+        <div class="feature-grid">
+
+
+            <div class="feature-card">
+
+                <span>01</span>
+
+                <h3>
+                    DETECT
+                </h3>
+
+                <p>
+                    Identify suspicious digital activity.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <span>02</span>
+
+                <h3>
+                    DECIDE
+                </h3>
+
+                <p>
+                    Make decisions under pressure.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <span>03</span>
+
+                <h3>
+                    LEARN
+                </h3>
+
+                <p>
+                    Understand why your choice matters.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     DASHBOARD
+===================================================== -->
+
+<section
+    id="dashboard"
+    class="page dashboard hidden"
+>
+
+
+    <div class="dashboard-header">
+
+
+        <div>
+
+            <span class="eyebrow">
+                PLAYER DASHBOARD
+            </span>
+
+            <h2>
+                Welcome,
+                <span>Cyber Explorer.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="streak">
+
+            🔥
+
+            <strong id="streak">
+                0
+            </strong>
+
+            DAY STREAK
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- PLAYER STATS -->
+
+    <div class="stats-grid">
+
+
+        <div class="stat-card purple">
+
+            <span>
+                LEVEL
+            </span>
+
+            <strong id="level">
+                01
+            </strong>
+
+            <small>
+                CYBER ROOKIE
+            </small>
+
+        </div>
+
+
+        <div class="stat-card cyan">
+
+            <span>
+                TOTAL XP
+            </span>
+
+            <strong id="total-xp">
+                000
+            </strong>
+
+            <small>
+                / 1500 XP
+            </small>
+
+        </div>
+
+
+        <div class="stat-card pink">
+
+            <span>
+                SECURITY SCORE
+            </span>
+
+            <strong id="security-score">
+                0%
+            </strong>
+
+            <small>
+                DIGITAL INSTINCT
+            </small>
+
+        </div>
+
+
+        <div class="stat-card green">
+
+            <span>
+                MISSIONS
+            </span>
+
+            <strong id="mission-count">
+                0/3
+            </strong>
+
+            <small>
+                COMPLETED
+            </small>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- XP BAR -->
+
+    <div class="xp-panel">
+
+
+        <div class="xp-header">
+
+            <span>
+                XP PROGRESS
+            </span>
+
+            <span id="xp-text">
+                0 / 1500
+            </span>
+
+        </div>
+
+
+        <div class="xp-bar">
+
+            <div
+                id="xp-progress"
+                class="xp-progress"
+            ></div>
+
+        </div>
+
+
+        <div class="level-labels">
+
+            <span>
+                LVL 01
+            </span>
+
+            <span>
+                LVL 02
+            </span>
+
+            <span>
+                LVL 03
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- MISSIONS -->
+
+    <div class="dashboard-title">
+
+        <span>
+            AVAILABLE MISSIONS
+        </span>
+
+        <h3>
+            Choose your challenge.
+        </h3>
+
+    </div>
+
+
+    <div class="mission-grid">
+
+
+        <!-- PHISHING -->
+
+        <div
+            id="mission-phishing"
+            class="mission-card"
+            onclick="startPhishing()"
+        >
+
+            <div class="mission-top">
+
+                <span>
+                    MISSION 01
+                </span>
+
+                <b>
+                    +500 XP
+                </b>
+
+            </div>
+
+
+            <div class="mission-icon">
+                📧
+            </div>
+
+
+            <h3>
+                PHISHING DETECTIVE
+            </h3>
+
+
+            <p>
+
+                Find the warning signs hidden
+                inside a suspicious email.
+
+            </p>
+
+
+            <div class="mission-bottom">
+
+                <span>
+                    EASY
+                </span>
+
+                <span>
+                    ANALYSIS
+                </span>
+
+            </div>
+
+
+            <div
+                id="complete-phishing"
+                class="completed-badge hidden"
+            >
+                ✓ COMPLETED
+            </div>
+
+        </div>
+
+
+
+        <!-- PASSWORD -->
+
+        <div
+            id="mission-password"
+            class="mission-card cyan-card"
+            onclick="startPassword()"
+        >
+
+            <div class="mission-top">
+
+                <span>
+                    MISSION 02
+                </span>
+
+                <b>
+                    +500 XP
+                </b>
+
+            </div>
+
+
+            <div class="mission-icon">
+                🔐
+            </div>
+
+
+            <h3>
+                PASSWORD VAULT
+            </h3>
+
+
+            <p>
+
+                Test your knowledge of strong
+                password practices.
+
+            </p>
+
+
+            <div class="mission-bottom">
+
+                <span>
+                    MEDIUM
+                </span>
+
+                <span>
+                    SECURITY
+                </span>
+
+            </div>
+
+
+            <div
+                id="complete-password"
+                class="completed-badge hidden"
+            >
+                ✓ COMPLETED
+            </div>
+
+        </div>
+
+
+
+        <!-- SOCIAL ENGINEERING -->
+
+        <div
+            id="mission-social"
+            class="mission-card pink-card"
+            onclick="startSocial()"
+        >
+
+            <div class="mission-top">
+
+                <span>
+                    MISSION 03
+                </span>
+
+                <b>
+                    +500 XP
+                </b>
+
+            </div>
+
+
+            <div class="mission-icon">
+                🕵️
+            </div>
+
+
+            <h3>
+                SOCIAL TRAP
+            </h3>
+
+
+            <p>
+
+                Someone is asking for sensitive
+                information. Can you spot the trap?
+
+            </p>
+
+
+            <div class="mission-bottom">
+
+                <span>
+                    HARD
+                </span>
+
+                <span>
+                    DECISION
+                </span>
+
+            </div>
+
+
+            <div
+                id="complete-social"
+                class="completed-badge hidden"
+            >
+                ✓ COMPLETED
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ACHIEVEMENTS -->
+
+    <div class="achievements">
+
+
+        <div class="dashboard-title">
+
+            <span>
+                ACHIEVEMENTS
+            </span>
+
+            <h3>
+                Build your security profile.
+            </h3>
+
+        </div>
+
+
+        <div class="achievement-grid">
+
+
+            <div
+                id="badge-first"
+                class="achievement locked"
+            >
+
+                <div>
+                    🛡️
+                </div>
+
+                <strong>
+                    FIRST DEFENSE
+                </strong>
+
+                <small>
+                    Complete 1 mission
+                </small>
+
+            </div>
+
+
+            <div
+                id="badge-hunter"
+                class="achievement locked"
+            >
+
+                <div>
+                    🕵️
+                </div>
+
+                <strong>
+                    THREAT HUNTER
+                </strong>
+
+                <small>
+                    Complete 2 missions
+                </small>
+
+            </div>
+
+
+            <div
+                id="badge-master"
+                class="achievement locked"
+            >
+
+                <div>
+                    👑
+                </div>
+
+                <strong>
+                    CYBER MASTER
+                </strong>
+
+                <small>
+                    Complete all missions
+                </small>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PHISHING
+===================================================== -->
+
+<section
+    id="phishing"
+    class="page challenge hidden"
+>
+
+
+    <button
+        class="back"
+        onclick="openDashboard()"
+    >
+        ← DASHBOARD
+    </button>
+
+
+    <div class="challenge-box">
+
+
+        <div class="challenge-header">
+
+            <span>
+                MISSION 01 / DIGITAL INVESTIGATION
+            </span>
+
+            <h2>
+                PHISHING DETECTIVE
+            </h2>
+
+            <p>
+                Select every suspicious clue.
+            </p>
+
+        </div>
+
+
+
+        <div class="email">
+
+
+            <div class="email-header">
+
+                <p>
+
+                    <strong>
+                        From:
+                    </strong>
+
+                    security-alert@paypa1-support.com
+
+                </p>
+
+
+                <p>
+
+                    <strong>
+                        Subject:
+                    </strong>
+
+                    URGENT! Your account
+                    will be suspended
+
+                </p>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="email-body">
+
+                <p>
+                    Hello User,
+                </p>
+
+
+                <p>
+
+                    We detected unusual activity
+                    on your account.
+
+                    Your account will be permanently
+                    suspended within 24 hours.
+
+                </p>
+
+
+                <p>
+
+                    Click below to verify your
+                    identity immediately.
+
+                </p>
+
+
+                <button class="fake-button">
+                    VERIFY ACCOUNT
+                </button>
+
+
+                <p>
+                    Thank you,<br>
+                    PayPal Security Team
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="question">
+
+
+            <h3>
+                🔎 Identify the clues
+            </h3>
+
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    value="1"
+                >
+
+                The sender address looks unusual.
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    value="2"
+                >
+
+                The message creates urgency.
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    value="3"
+                >
+
+                It asks you to verify your account.
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    value="4"
+                >
+
+                The email contains a greeting.
+
+            </label>
+
+
+            <button onclick="checkPhishing()">
+                ANALYZE THREAT →
+            </button>
+
+
+            <div id="phishing-result"></div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PASSWORD
+===================================================== -->
+
+<section
+    id="password"
+    class="page challenge hidden"
+>
+
+
+    <button
+        class="back"
+        onclick="openDashboard()"
+    >
+        ← DASHBOARD
+    </button>
+
+
+    <div class="challenge-box">
+
+
+        <div class="challenge-header">
+
+            <span>
+                MISSION 02 / SECURITY TEST
+            </span>
+
+            <h2>
+                PASSWORD VAULT
+            </h2>
+
+            <p>
+                Select the strongest password.
+            </p>
+
+        </div>
+
+
+
+        <div class="vault">
+
+            <div class="vault-icon">
+                🔒
+            </div>
+
+            <h3>
+                SECURITY VAULT
+            </h3>
+
+            <p>
+                Choose the strongest key.
+            </p>
+
+        </div>
+
+
+
+        <div class="password-options">
+
+
+            <button onclick="checkPassword(1)">
+                🔓 password123
+            </button>
+
+
+            <button onclick="checkPassword(2)">
+                🔓 Meghana2007
+            </button>
+
+
+            <button onclick="checkPassword(3)">
+                🔐 R7!qL2#vP9@x
+            </button>
+
+
+        </div>
+
+
+        <div id="password-result"></div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SOCIAL ENGINEERING
+===================================================== -->
+
+<section
+    id="social"
+    class="page challenge hidden"
+>
+
+
+    <button
+        class="back"
+        onclick="openDashboard()"
+    >
+        ← DASHBOARD
+    </button>
+
+
+    <div class="challenge-box">
+
+
+        <div class="challenge-header">
+
+            <span>
+                MISSION 03 / SOCIAL ENGINEERING
+            </span>
+
+            <h2>
+                SOCIAL TRAP
+            </h2>
+
+            <p>
+                Someone is asking for sensitive information.
+                What should you do?
+            </p>
+
+        </div>
+
+
+
+        <div class="chat-box">
+
+
+            <div class="chat-person">
+                👤 UNKNOWN CONTACT
+            </div>
+
+
+            <div class="message received">
+
+                Hey! I'm from the IT team.
+
+                We're updating student accounts.
+
+                Can you send me your login
+                password so I can verify yours?
+
+            </div>
+
+
+            <div class="message warning">
+
+                ⚠️ REQUEST DETECTED
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="decision-options">
+
+
+            <button
+                onclick="checkSocial(1)"
+            >
+
+                📤 Send the password
+
+            </button>
+
+
+            <button
+                onclick="checkSocial(2)"
+            >
+
+                🛑 Refuse and report the request
+
+            </button>
+
+
+            <button
+                onclick="checkSocial(3)"
+            >
+
+                🤔 Ask them for your password first
+
+            </button>
+
+
+        </div>
+
+
+        <div id="social-result"></div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FINAL RESULT
+===================================================== -->
+
+<section
+    id="result"
+    class="page result hidden"
+>
+
+
+    <div class="result-box">
+
+
+        <div class="badge">
+            🏆
+        </div>
+
+
+        <span class="eyebrow">
+            CYBERQUEST COMPLETE
+        </span>
+
+
+        <h1>
+            YOU'RE
+            <span>CYBER AWARE.</span>
+        </h1>
+
+
+        <p>
+
+            You've completed the CyberQuest
+            security challenge.
+
+        </p>
+
+
+
+        <div class="final-stats">
+
+
+            <div>
+
+                <strong id="final-xp">
+                    000
+                </strong>
+
+                <small>
+                    XP EARNED
+                </small>
+
+            </div>
+
+
+            <div>
+
+                <strong id="final-score">
+                    0%
+                </strong>
+
+                <small>
+                    SECURITY SCORE
+                </small>
+
+            </div>
+
+
+            <div>
+
+                <strong id="final-missions">
+                    0/3
+                </strong>
+
+                <small>
+                    MISSIONS
+                </small>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="final-message">
+
+            🛡️ Your digital instincts
+            are getting stronger.
+
+        </div>
+
+
+        <button onclick="openDashboard()">
+            RETURN TO DASHBOARD →
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
